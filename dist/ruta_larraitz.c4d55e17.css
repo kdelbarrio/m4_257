@@ -1,0 +1,174 @@
+.active .slide {
+  visibility: hidden;
+  transition: left .6s ease-out;
+  display: block !important;
+}
+
+.active .slide.current {
+  visibility: visible;
+  left: 0;
+}
+
+.active .slide.next {
+  left: 100%;
+}
+
+.active .slide.prev {
+  left: -100%;
+}
+
+.active .slide.next.in-transition, .active .slide.prev.in-transition {
+  visibility: visible;
+}
+
+.carousel, .slide {
+  width: 640px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  height: 360px;
+  background-size: cover;
+  border: 1px solid #333;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.slide h4 {
+  text-align: right;
+  background-color: #fffc;
+  border-radius: 0 0 0 .5em;
+  margin: 0;
+  padding: .25em;
+  font-size: 1.25em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.slide p {
+  clear: both;
+  background-color: #fffc;
+  margin: 0;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slide a {
+  text-align: right;
+  display: block;
+}
+
+.carousel.active {
+  height: 360px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.active .slide {
+  z-index: 200;
+  border: none;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide.current {
+  z-index: 500;
+  display: block;
+}
+
+.btn-prev, .btn-next {
+  z-index: 700;
+  background: #fff9;
+  border: 0;
+  margin-top: -2.5em;
+  padding: 10px 5px;
+  line-height: 1;
+  transition: padding .4s ease-out;
+  position: absolute;
+  top: 50%;
+}
+
+.btn-next:hover, .btn-next:focus, .btn-prev:hover, .btn-prev:focus {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-prev {
+  border-radius: 0 .25em .25em 0;
+  left: 0;
+}
+
+.btn-next {
+  border-radius: .25em 0 0 .25em;
+  right: 0;
+}
+
+.carousel.with-slidenav {
+  background-color: #fff;
+  padding-bottom: 2.5em;
+}
+
+.carousel.with-slidenav .slide {
+  border-bottom: 1px solid #333;
+}
+
+.slidenav {
+  text-align: center;
+  position: absolute;
+  bottom: .25em;
+  left: 0;
+  right: 0;
+}
+
+.slidenav li {
+  margin: 0 .5em;
+  display: inline-block;
+}
+
+.slidenav button {
+  height: 2em;
+  min-width: 2em;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #000;
+  font-weight: bold;
+  line-height: .5;
+}
+
+.slidenav button.current {
+  color: #333;
+  background-color: #fff;
+  border-radius: .5em;
+}
+
+.slidenav button:hover, .slidenav button:focus {
+  border: 2px dotted #fff;
+}
+
+.slidenav button.current:hover, .slidenav button.current:focus {
+  border: 2px dotted #036;
+}
+
+@media (max-width: 620px) {
+  .carousel, .slide {
+    width: 320px;
+  }
+}
+
+/*# sourceMappingURL=ruta_larraitz.c4d55e17.css.map */
