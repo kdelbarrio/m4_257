@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="cabecera">
-      <p>Abaltzisketa</p>
+      <p><img src="images/logo.svg" alt="" /> <span>Abaltzisketa</span></p>
       <button id="button-menu" class="button-menu">Menu</button>
       <nav id="nav" class="menu">
         <ul>
@@ -30,7 +30,12 @@
       </h1>
       <div class="ruta">
         <div class="col-50">
-          <img src="images/ruta_larraitz.jpg" />
+          <img
+          srcset="images/larraitz_destacada_240.jpg 480w, images/larraitz_destacada_320.jpg 800w"
+          sizes="(max-width: 600px) 480px,
+                 800px"
+          src="images/larraitz_destacada_320.jpg"
+          alt="Paseo accesible hacia Larraitz" />
         </div>
         <div class="col-50 text">
         <h2><a href="ruta_larraitz.html">Ruta accesible de Larraitz</a></h2>
@@ -45,7 +50,13 @@
       </div>
       <div class="ruta">
         <div class="col-50">
-          <img src="images/planes_aralar.jpg" />
+          <img
+          srcset="images/planes_aralar_240.jpg 480w, images/planes_aralar_320.jpg 800w"
+          sizes="(max-width: 600px) 480px,
+                 800px"
+          src="images/planes_aralar_320.jpg"
+          alt="Monte Txindoki" />
+
         </div>
         <div class="col-50 text">
         <h2><a href="#">Subida al monte Txindoki desde el parking de Larraitz</a></h2>
@@ -60,7 +71,12 @@
       </div>
       <div class="ruta">
         <div class="col-50">
-          <img src="images/pueblo_abaltzisketa.jpg" />
+          <img
+          srcset="images/pueblo_abaltzisketa_240.jpg 480w, images/pueblo_abaltzisketa_320.jpg 800w"
+          sizes="(max-width: 600px) 480px,
+                 800px"
+          src="images/pueblo_abaltzisketa_320.jpg"
+          alt="Ermita Larraitz" />
         </div>
         <div class="col-50 text">
         <h2><a href="#">Circular a la Ermita</a></h2>
@@ -81,11 +97,23 @@
 
     </main>
     <footer>
-        <ul>
+      <div class="pie-logo"><img src="images/logo.svg" width="64" height="64" alt="" /> </div>
+      <div class="enlaces">
+        <ul class="apartados">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">El pueblo</a></li>
+          <li><a href="rutas.html">Rutas y recorridos</a></li>
+          <li><a href="#">Planes</a></li>
+          <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+        <ul class="contacto">
           <li><a href="#">Contacto</a></li>
+          <li><a href="#">Mapa web</a></li>
+          <li><a href="#">Accesibilidad</a></li>
           <li><a href="enlaces.html">Licencia de uso</a></li>
         </ul>
-  
-      </footer>    
+      </div>
+      
+    </footer>
   </body>
 </html>

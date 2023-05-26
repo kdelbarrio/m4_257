@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="cabecera">
-      <p>Abaltzisketa</p>
+        <p><img src="images/logo.svg" alt="" /> <span>Abaltzisketa</span></p>
       <button id="button-menu" class="button-menu">Menu</button>
       <nav id="nav" class="menu">
         <ul>
@@ -31,6 +31,12 @@
         Ruta accesible de Larraitz
       </h1>
       <div class="contenido">
+        <picture>
+          <source media="(min-width: 900px)" srcset="images/larraitz_destacada_900.jpg">
+          <source media="(min-width:640px)" srcset="images/larraitz_destacada_640.jpg">
+          <source media="(max-width: 639px)" srcset="images/larraitz_destacada_320.jpg">
+          <img src="images/larraitz_destacada_900.jpg" alt="Paseo accesible hacia Larraitz">
+        </picture>
         <div class="descripcion">
         <p>El paseo conecta el barrio de Larraitz con el nucleo urbano de Abaltzisketa. Se parte cerca de la ermita de Larraitz. Un sendero concebido para admirar in situ la belleza del Parque Natural de Aralar.</p>
         <p>Los visitantes disfrutarán de las zonas de campiña de Amezketa y Abaltzisketa, con sus heredades, huertas, pastizales y bosques. De vez en cuando, también se descubre ante los ojos la zona montañosa de Aralar, esbelta y abrupta, y a la vez hermosa.</p>    
@@ -40,17 +46,18 @@
 
     <div id="c" class="carousel">
         <ul>
-            <li class="slide" style="background-image: url('images/pueblo_abaltzisketa.jpg');">
+            <li class="slide slide-1" style="background-image: url('images/pueblo_abaltzisketa.jpg');">
+
                 <p>
                     Ermita de Larratz, donde comienza el recorrido.
                 </p>
             </li>
-            <li class="slide" style="background-image: url('images/ruta_larraitz.jpg');">
+            <li class="slide slide-2" style="background-image: url('images/ruta_larraitz.jpg');">
                 <p>
                     Durante el recorrido nos encontraremos con un parque de tirolinas
                 </p>
             </li>
-            <li class="slide" style="background-image: url('images/planes_aralar.jpg');">
+            <li class="slide slide-3" style="background-image: url('images/planes_aralar.jpg');">
                 <p>
                     Expectaculares vistas al Txindoki.
                 </p>
@@ -76,14 +83,14 @@
         </dl>      
         </div>
         <div class="descargas">
-        <h2>Descargas</h2>
+        <h2><img src="images/descargas_icon.png" alt="" /> Descargas</h2>
         <ul>
             <li><a class="btn" href="#">Panel informativo</a></li>
             <li><a class="btn" href="#">Track GPS</a></li>
         </ul>   
         </div>
         <div class="relacionadas">
-          <h2>Rutas relacionadas</h2>
+          <h2><img src="images/rutas_icon.png" alt="" /> Rutas relacionadas</h2>
           <ul>
               <li><a href="#">Ascenso al monte Txindoki</a></li>
               <li><a href="#">Ruta a la ermita de Larraitz</a></li>
@@ -96,12 +103,24 @@
 
     </main>
     <footer>
-        <ul>
+      <div class="pie-logo"><img src="images/logo.svg" width="64" height="64" alt="" /> </div>
+      <div class="enlaces">
+        <ul class="apartados">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">El pueblo</a></li>
+          <li><a href="rutas.html">Rutas y recorridos</a></li>
+          <li><a href="#">Planes</a></li>
+          <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+        <ul class="contacto">
           <li><a href="#">Contacto</a></li>
+          <li><a href="#">Mapa web</a></li>
+          <li><a href="#">Accesibilidad</a></li>
           <li><a href="enlaces.html">Licencia de uso</a></li>
         </ul>
-  
-      </footer> 
+      </div>
+      
+    </footer>
       <script>
           /* focusin/out event polyfill (firefox) */
   !function(){
