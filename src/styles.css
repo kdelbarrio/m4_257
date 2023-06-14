@@ -232,6 +232,12 @@ padding-left:.5em;
 .datos dd {
   margin: 0.2em 0 0.5em;
 }
+.datos ul {
+  padding:1em 2em;
+}
+.datos h2{
+  padding: 1em 1em 0;
+}
 .descargas, .relacionadas {
   float: left;
   width: 100%;

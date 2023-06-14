@@ -264,6 +264,14 @@ p.nav {
   margin: .2em 0 .5em;
 }
 
+.datos ul {
+  padding: 1em 2em;
+}
+
+.datos h2 {
+  padding: 1em 1em 0;
+}
+
 .descargas, .relacionadas {
   float: left;
   width: 100%;
