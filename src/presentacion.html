@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="scripts.js"></script>
-    <title>Enlaces</title>
+    <script defer type="module" src="scripts.js"></script>
+    <title>Presentación de Abaltzisketa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -55,7 +55,8 @@
       sizes="(max-width: 600px) 400px,
              800px"
       src="images/ruta_larraitz.jpg"
-      alt="Paseo y tirolinas de Larraitz" />
+      alt="Paseo y tirolinas de Larraitz" 
+      loading="lazy" />
       <p>Conoce sus maravillosas rutas por el Txindoki y los montes cercanos.</p>
       <p><a class="btn" href="rutas.html">Ver las rutas</a></p>
       </div>
@@ -66,7 +67,8 @@
     sizes="(max-width: 600px) 400px,
            800px"
     src="images/planes_aralar.jpg"
-    alt="Monte Txindoki" />
+    alt="Monte Txindoki"
+    loading="lazy" />
 
     <p>El entorno es ideal para conocer un caserío de cerca, degustar queso Idiazabal o probar la sidra.</p>
       <p><a class="btn" href="#">Ver los planes</a></p>
@@ -78,7 +80,7 @@
 
     </main>
     <footer>
-      <div class="pie-logo"><img src="images/logo.svg" width="64" height="64" alt="" /> </div>
+      <div class="pie-logo"><img loading="lazy" src="images/logo.svg" width="64" height="64" alt="" /> </div>
       <div class="enlaces">
         <ul class="apartados">
           <li><a href="index.html">Inicio</a></li>

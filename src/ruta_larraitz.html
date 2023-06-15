@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="accessible_carousel.css" />
-    <script type="module" src="scripts.js"></script>
+    <script defer type="module" src="scripts.js"></script>
     <title>Ruta accesible de Larraitz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -35,7 +35,7 @@
           <source media="(min-width: 900px)" srcset="images/larraitz_destacada_900.jpg">
           <source media="(min-width:640px)" srcset="images/larraitz_destacada_640.jpg">
           <source media="(max-width: 639px)" srcset="images/larraitz_destacada_320.jpg">
-          <img src="images/larraitz_destacada_900.jpg" alt="Paseo accesible hacia Larraitz">
+          <img loading="lazy" src="images/larraitz_destacada_900.jpg" alt="Paseo accesible hacia Larraitz">
         </picture>
         <div class="descripcion">
         <p>El paseo conecta el barrio de Larraitz con el nucleo urbano de Abaltzisketa. Se parte cerca de la ermita de Larraitz. Un sendero concebido para admirar in situ la belleza del Parque Natural de Aralar.</p>
@@ -83,14 +83,14 @@
         </dl>      
         </div>
         <div class="descargas">
-        <h2><img src="images/descargas_icon.png" alt="" /> Descargas</h2>
+        <h2><img loading="lazy" src="images/descargas_icon.png" alt="" /> Descargas</h2>
         <ul>
             <li><a class="btn" href="#">Panel informativo</a></li>
             <li><a class="btn" href="#">Track GPS</a></li>
         </ul>   
         </div>
         <div class="relacionadas">
-          <h2><img src="images/rutas_icon.png" alt="" /> Rutas relacionadas</h2>
+          <h2><img loading="lazy" src="images/rutas_icon.png" alt="" /> Rutas relacionadas</h2>
           <ul>
               <li><a href="#">Ascenso al monte Txindoki</a></li>
               <li><a href="#">Ruta a la ermita de Larraitz</a></li>
@@ -103,7 +103,7 @@
 
     </main>
     <footer>
-      <div class="pie-logo"><img src="images/logo.svg" width="64" height="64" alt="" /> </div>
+      <div class="pie-logo"><img loading="lazy" src="images/logo.svg" width="64" height="64" alt="" /> </div>
       <div class="enlaces">
         <ul class="apartados">
           <li><a href="index.html">Inicio</a></li>
@@ -121,8 +121,8 @@
       </div>
       
     </footer>
-      <script>
-          /* focusin/out event polyfill (firefox) */
+  <script>
+  /* focusin/out event polyfill (firefox) */
   !function(){
     var w = window,
     d = w.document;
@@ -420,7 +420,6 @@
     animate: true,
     startAnimated: true
   });
-
-      </script>   
+  </script>   
   </body>
 </html>
