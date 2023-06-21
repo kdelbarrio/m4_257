@@ -25,7 +25,7 @@ body p, body li{
   /*padding: .5em 0;*/
 }
 header.home {
-    background:url(images/home_abaltzisketa_aralar_1800.jpg) no-repeat center #000;
+    background:url(images/home_abaltzisketa_aralar_1800.webp) no-repeat center;
     height: 400px;
   }
 main {
@@ -179,6 +179,7 @@ h1.titular {
 }
 .ruta img {
   width: 100%;
+  height: auto;
 }
 .ruta {
   padding: .5em;
@@ -318,7 +319,7 @@ nav li.activo {
     width: 100%;
   }
   header.home {
-    background:url(images/home_abaltzisketa_aralar_800.jpg) no-repeat center #000;
+    background:url(images/home_abaltzisketa_aralar_800.webp) no-repeat center;
     height: 400px;
   }
   .enlaces {
@@ -331,10 +332,19 @@ nav li.activo {
   font-size:1.5em;
 }
 .cabecera img {
-  width: 50%;
+  width: 64px;
+  height: 64px;
 }
 section.intro {
   font-size:1em;
 }
-
+.destacados img {
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 97% 77%, 93% 92%, 91% 84%, 86% 99%, 0 100%);
+  width: 100%;
+  height: auto;
+}
+picture img {
+  width: 100%;
+  height: auto;
+}
 }
